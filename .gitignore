@@ -1,2 +1,26 @@
+# 仿真可执行文件
+*.sim
+*.vvp
+*.out
+sim
+
+# 波形文件
+*.vcd
+*.vpd
+*.fsdb
+
+# 日志/临时文件
+*.log
+*.o
+
+# 编辑器/系统垃圾
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# VCS 编译/运行时目录
 build/
 *.sim.daidir
