@@ -61,3 +61,5 @@ end
 | SCL | 2021.03 |
 | OS | Ubuntu 22.04.5 LTS, VMware 虚拟机 |
 | X Server | VcXsrv (Windows) |
+
+> 2026-06-02 更新
