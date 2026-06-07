@@ -101,4 +101,4 @@ end
 | OS | Ubuntu 22.04.5 LTS, VMware 虚拟机 |
 | X Server | VcXsrv (Windows) |
 
-> 2026-06-02 更新
+> 2026-06-07 更新
