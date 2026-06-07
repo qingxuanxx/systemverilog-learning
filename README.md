@@ -51,6 +51,11 @@ sv_code/
 | `2.sv` | 带参数的构造函数 | 默认参数值、`this` 指针区分成员变量与参数 |
 | `3.sv` | 静态变量与方法 | `static` 成员属于类而非对象、`packet::get_count()` 类名访问 |
 | `4.sv` | extern 外部实现 | `extern` 声明原型、类外 `function packet::new()` 实现 |
+| `5.sv` | 访问控制 | `public`/`protected`/`local` 三级权限、通过 public 方法访问内部成员 |
+| `6.sv` | 类组合 (Composition) | 大类包含小类、构造函数中 `new()` 初始化内部对象 |
+| `7.sv` | 深拷贝 vs 浅拷贝 | 句柄赋值只复制引用、自定义 `copy()` 递归复制内部对象 |
+| `8.sv` | ref 传递句柄 + 垃圾回收 | `ref` 才能修改外部句柄、SV 自动 GC 回收无引用对象 |
+| `9.sv` | pack/unpack 字节流 | `packed struct` 中介、`{>>{}}` 流操作符实现 class ↔ byte[] 转换 |
 
 ## 新建章节
 
