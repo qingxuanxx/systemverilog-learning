@@ -17,6 +17,41 @@ sv_code/
 └── ...
 ```
 
+## 章节内容
+
+### 第2章 — 数据类型
+
+| 文件 | 主题 | 关键知识点 |
+|------|------|-----------|
+| `1.sv` | `logic` vs `bit` | 四态(`logic`)保留X/Z，双态(`bit`)丢失X/Z；`$isunknown()` 检测 |
+| `2.sv` | 关联数组（地址索引） | `foreach` 遍历、`first()`/`next()` 遍历、`delete()` 删除 |
+| `3.sv` | 合并数组 vs 非合并数组 | `bit [7:0] unpacked[3]` vs `bit [2:0][7:0] packed` |
+| `4.sv` | 动态数组 | `new[]` 分配/扩容、`size()`、`sum()`、`delete()`、复制 |
+| `5.sv` | 队列 | `push_front/back`、切片 `[2:5]`、`find with`、`unique()`、`min/max`、`sum with` |
+| `6.sv` | 关联数组（字符串/地址索引） | 稀疏内存模型、`exists()` 检查、`first()`/`next()` 遍历、`delete()` |
+| `7.sv` | 结构体与流操作符 | `packed struct`、`{>>{}}` 大端打包、`{<<{}}` 小端打包 |
+| `8.sv` | 枚举类型 | `typedef enum`、`.next()`、`.prev()`、`.first()`、`.name()` 环形遍历 |
+
+### 第3章 — 过程语句与子程序
+
+| 文件 | 主题 | 关键知识点 |
+|------|------|-----------|
+| `1.sv` | 过程语句 | `for` 循环声明变量、`break`/`continue`、`do-while`、块标签 |
+| `2.sv` | task / function / void | task 可延时无返回值；function 不可延时必须有返回值；void function 两者结合 |
+| `3.sv` | 子程序参数传递 | 值传递(复制)、`const ref`(只读引用)、`ref`(可写引用)、默认参数、命名参数 |
+| `4.sv` | return 语句 | task 中提前 `return` 避免错误；function 中提前 `return` 返回结果 |
+| `5.sv` | automatic | 默认静态存储 vs `automatic` 动态存储；fork-join 中的变量竞争 |
+| `6.sv` | 时间与延时 | `timeunit`/`timeprecision`、`$timeformat`、`$realtime` vs `$time` |
+
+### 第5章 — 类与面向对象
+
+| 文件 | 主题 | 关键知识点 |
+|------|------|-----------|
+| `1.sv` | 类的基本定义 | `class`、`new()` 构造函数、句柄声明与对象创建 |
+| `2.sv` | 带参数的构造函数 | 默认参数值、`this` 指针区分成员变量与参数 |
+| `3.sv` | 静态变量与方法 | `static` 成员属于类而非对象、`packet::get_count()` 类名访问 |
+| `4.sv` | extern 外部实现 | `extern` 声明原型、类外 `function packet::new()` 实现 |
+
 ## 新建章节
 
 ```bash
@@ -46,6 +81,10 @@ initial begin
     $fsdbDumpvars(0, top_module_name);
 end
 ```
+
+## 代码风格
+
+- **上建下测**：class / package / DUT 放在文件上方，module / program (testbench) 放在文件下方
 
 ## 已知问题
 
