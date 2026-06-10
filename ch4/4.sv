@@ -54,6 +54,9 @@ program automatic tb_prog(arb_if.tb bus);
     end
 
 endprogram : tb_prog
+// program 块有一些限制（例如不能包含 always 块，不能实例化 module 等）
+// 可以使用 module + clocking block 的组合来代替 program
+// 因为 clocking block 也能提供类似的同步和防竞争机制，且灵活性更高
 
 module top;
 
