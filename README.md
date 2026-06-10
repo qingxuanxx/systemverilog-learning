@@ -53,7 +53,7 @@ sv_code/
 | `4.sv` | program 块 + reactive 区域 | `program automatic` 编写 TB、reactive 区域避免与 DUT 竞争 |
 | `5.sv` | clocking block | `input #1step`/`output #1ns` 采样驱动规则、`@(bus.cb)` 同步事件 |
 | `6.sv` | $unit / $root / `.*` 隐式连接 | 全局参数、`$root` 绝对路径寻址、`.*` 隐式端口连接 |
-| `7.sv` | SVA 并发断言 | `property`/`assert property`、`|->` 重叠蕴含、`##[1:3]` 延时范围、`disable iff` |
+| `7.sv` | SVA 并发断言 | `property`/`assert property`、`\|->` 重叠蕴含、`##[1:3]` 延时范围、`disable iff` |
 
 ### 第5章 — 类与面向对象
 
