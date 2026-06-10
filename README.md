@@ -54,6 +54,7 @@ sv_code/
 | `5.sv` | clocking block | `input #1step`/`output #1ns` 采样驱动规则、`@(bus.cb)` 同步事件 |
 | `6.sv` | $unit / $root / `.*` 隐式连接 | 全局参数、`$root` 绝对路径寻址、`.*` 隐式端口连接 |
 | `7.sv` | SVA 并发断言 | `property`/`assert property`、`\|->` 重叠蕴含、`##[1:3]` 延时范围、`disable iff` |
+| `8.sv` | initial/final + 随机测试 | `$urandom_range` 随机激励、`final` 块打印总结、program 自动结束 |
 
 ### 第5章 — 类与面向对象
 
