@@ -43,6 +43,15 @@ sv_code/
 | `5.sv` | automatic | 默认静态存储 vs `automatic` 动态存储；fork-join 中的变量竞争 |
 | `6.sv` | 时间与延时 | `timeunit`/`timeprecision`、`$timeformat`、`$realtime` vs `$time` |
 
+### 第4章 — 接口与程序块
+
+| 文件 | 主题 | 关键知识点 |
+|------|------|-----------|
+| `1.sv` | 传统 module + 竞争冒险 | `always_ff` 仲裁器、module TB 同区域竞争、`#1` 解决方案 |
+| `2.sv` | interface + modport | `interface` 封装信号、`modport` 区分 DUT/TB 视角 |
+| `3.sv` | interface 封装 task + `#1step` | 接口内定义 task、`import` 导出、`#1step` 解决竞争冒险 |
+| `4.sv` | program 块 + reactive 区域 | `program automatic` 编写 TB、reactive 区域避免与 DUT 竞争 |
+
 ### 第5章 — 类与面向对象
 
 | 文件 | 主题 | 关键知识点 |
@@ -106,4 +115,4 @@ end
 | OS | Ubuntu 22.04.5 LTS, VMware 虚拟机 |
 | X Server | VcXsrv (Windows) |
 
-> 2026-06-07 更新
+> 2026-06-10 更新
