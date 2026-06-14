@@ -72,15 +72,16 @@ sv_code/
 | `8.sv` | ref 传递句柄 + 垃圾回收 | `ref` 才能修改外部句柄、SV 自动 GC 回收无引用对象 |
 | `9.sv` | pack/unpack 字节流 | `packed struct` 中介、`{>>{}}` 流操作符实现 class ↔ byte[] 转换 |
 
-### 第6章 — 随机化
-
-| 文件 | 主题 | 关键知识点 |
-|------|------|-----------|
-| `ch6学习笔记.md` | 第6章完整学习笔记 | `rand`/`randc`、`constraint`、`inside`/`dist`、`constraint_mode`、`randomize() with`、`pre/post_randomize`、数组约束、事务序列 |
 
 ## 学习笔记
 
-每个章节目录下都有 `chX学习笔记.md`，涵盖对应章节全部知识点，配有代码示例和总结表格。
+| 章节 | 文件 | 内容 |
+|------|------|------|
+| 第2章 数据类型 | `ch2/ch2学习笔记.md` | `logic`/`bit`、定宽数组/动态数组/队列/关联数组、数组方法、`struct`/`enum`/`string`、类型转换 |
+| 第3章 过程语句和子程序 | `ch3/ch3学习笔记.md` | `for`/`break`/`continue`、task/function/void、`ref`/`const ref` 参数、`automatic` 存储、时间值 |
+| 第4章 连接设计和测试平台 | `ch4/ch4学习笔记.md` | `interface`/`modport`、`clocking block`、`program` 块、SVA 断言、竞争冒险 |
+| 第5章 面向对象编程基础 | `ch5/ch5学习笔记.md` | `class`/`object`/`handle`、构造函数、静态变量/方法、组合、深拷贝/浅拷贝、访问控制 |
+| 第6章 随机化 | `ch6/ch6学习笔记.md` | `rand`/`randc`、`constraint`/`inside`/`dist`、`constraint_mode`、`randomize() with`、数组约束、事务序列 |
 
 ## 新建章节
 
