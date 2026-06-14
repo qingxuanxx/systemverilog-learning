@@ -53,9 +53,7 @@ program automatic tb_final (arb_if.tb bus);
     // final 块：在仿真真正结束前（$finish 触发后）执行
     // 适合用来打印最终的测试总结报告
     final begin
-        $display("==============================");
-        $display("       仿真测试总结报告       ");
-        $display("==============================");
+        $display("=== 仿真测试总结报告 ===");
         $display("Pass: %0d, Fail: %0d", pass_cnt, fail_cnt);
         if (fail_cnt == 0)
             $display("Result: PASS");
