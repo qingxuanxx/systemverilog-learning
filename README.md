@@ -8,10 +8,12 @@ VCS + Verdi 环境，Ubuntu 22.04 虚拟机。
 sv_code/
 ├── Makefile.template    # 通用 Makefile，新建章节时复制
 ├── ch2/                 # 第2章：数据类型
-├── ch3/                 # 第3章
-├── ch4/                 # 第4章
-├── ch5/                 # 第5章
+├── ch3/                 # 第3章：过程语句和子程序
+├── ch4/                 # 第4章：连接设计和测试平台
+├── ch5/                 # 第5章：面向对象编程基础
+├── ch6/                 # 第6章：随机化
 │   ├── 1.sv, 2.sv ...   # 源码
+│   ├── chX学习笔记.md     # 章节学习笔记
 │   ├── Makefile          # 从模板复制的
 │   └── build/            # 编译生成（gitignore）
 └── ...
@@ -70,6 +72,16 @@ sv_code/
 | `8.sv` | ref 传递句柄 + 垃圾回收 | `ref` 才能修改外部句柄、SV 自动 GC 回收无引用对象 |
 | `9.sv` | pack/unpack 字节流 | `packed struct` 中介、`{>>{}}` 流操作符实现 class ↔ byte[] 转换 |
 
+### 第6章 — 随机化
+
+| 文件 | 主题 | 关键知识点 |
+|------|------|-----------|
+| `ch6学习笔记.md` | 第6章完整学习笔记 | `rand`/`randc`、`constraint`、`inside`/`dist`、`constraint_mode`、`randomize() with`、`pre/post_randomize`、数组约束、事务序列 |
+
+## 学习笔记
+
+每个章节目录下都有 `chX学习笔记.md`，涵盖对应章节全部知识点，配有代码示例和总结表格。
+
 ## 新建章节
 
 ```bash
@@ -119,4 +131,4 @@ end
 | OS | Ubuntu 22.04.5 LTS, VMware 虚拟机 |
 | X Server | VcXsrv (Windows) |
 
-> 2026-06-10 更新
+> 2026-06-14 更新
